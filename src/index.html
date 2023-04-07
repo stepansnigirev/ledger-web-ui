@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Swan custody</title>
+    <script type="module" src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="styles.css?b" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="errormsg"></div>
+      <h1>Hello from Swan Custody</h1>
+      <div id="connect-container">
+        <h2>Connect to your Ledger</h2>
+        <p>
+          First, connect your Ledger, unlock it and select Bitcoin app.<br/>
+          Then click one of the buttons below.
+        </p>
+        <div class="row">
+          <button id="connect-webusb">Connect via WebUSB</button>
+          <button id="connect-webhid">Connect via WebHID</button>
+          <button id="connect-webble">Connect via WebBluetooth</button>
+        </div>
+      </div>
+      <div id="actions" style="display: none">
+        <p>Device is connected</p>
+        <button id="get-xpub">Get Xpub</button>
+        <span id="xpub"></span>
+      </div>
+    </main>
+  </body>
+</html>

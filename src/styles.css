@@ -1,0 +1,63 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    --yellow: rgb(252,200,0);
+    --blue: rgb(0,48,94);
+    font-family: Greycliff, sans-serif;
+    line-height: 1.5;
+    font-variant: common-ligatures;
+    text-rendering: optimizelegibility;
+}
+main{
+    margin: auto;
+    max-width: 1300;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+h1, h2, h3{
+    font-family: "Source Serif Pro", serif;
+    margin: 0;
+    font-weight: 600;
+}
+#connect-container, #actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#errormsg{
+    color: #ff6600;
+    text-align: center;
+    min-height: 25px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+button{
+    padding: 16px;
+    background: var(--yellow);
+    border-radius: 3px;
+    border: 0px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    font-weight: bold;
+    flex-grow: 0;
+}
+button:hover{
+    background: var(--blue);
+    color: white;
+}
+span{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #eee;
+    word-break: break-all;
+}
